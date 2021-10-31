@@ -1,0 +1,12 @@
+{
+  "profile": {
+    "address": {
+      "streetAddress": "84 5th Ave",
+      "city": "Mountain View",
+      "state": "CA",
+      "zipcode": "4DS34"
+    }
+  },
+  "status": "success",
+  "message": "profile modified successfully"
+}

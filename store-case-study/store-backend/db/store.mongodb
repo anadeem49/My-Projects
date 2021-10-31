@@ -1,0 +1,54 @@
+use('store');
+
+db.products.drop();
+
+db.products.insertMany([
+  { '_id': 1, 'name': 'Ekster Parliament Smart Wallet', 'department': 'tech', 'price': 89.00, 'imageUrl': 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1589583203-ekster-wallet-1589583184.jpg?crop=1xw:1xh;center,top&resize=768:*' , 'description': 'has space for at least 10 cards, as well as a strap for carrying cash and receipts' },
+  { '_id': 2, 'name': 'Petcube Bites 2 Pet Camera with Treat Dispenser', 'department': 'tech', 'price': 199.00, 'imageUrl': 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1612189181-pet-cube-treat-dispenser-1612189163.jpg?crop=1xw:1xh;center,top&resize=768:*', 'description': 'allows you to keep an eye on your pet while you're not home, and even deploy a treat for them right from your smartphone' },
+  { '_id': 3, 'name': 'Peak Design Tech Pouch', 'department': 'tech', 'price': 59.95, 'imageUrl': 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1617631389-peak-design-tech-pouch-1575305838.jpg?crop=1xw:1xh;center,top&resize=768:*', 'description': 'has enough pockets and compartments for small gadgets, charging cables, memory cards, and any other accessories that you might own' }
+]);
+
+db.products.find({ price: { $gte: 200.00, $lt: 100.00 } });
+
+const aggregation = [
+  { $match: { department: { name: "tech"} } }
+];
+
+db.products.aggregate(aggregation);
+
+//////
+db.users.drop();
+
+db.users.insertMany([
+  { '_id': 1, 'firstName': 'John', 'lastName': 'Doe', 'email': 'john.doe@gmail.com', 'phoneNumber': '1113335555' , 'interests': 'coding, anime', 'address': '123 Main Street, Boston, MA 02110' },
+  { '_id': 2,'firstName': 'Mary', 'lastName': 'Jane', 'email': 'mary.jane@gmail.com', 'phoneNumber': '222444666' , 'interests': 'coding, sports', 'address': '456 Main St, New York, NY 10010'},
+  { '_id': 3, 'firstName': 'Foo', 'lastName': 'Bar', 'email': 'foo.bar@gmail.com', 'phoneNumber': '3335557777' , 'interests': 'coding', 'address': '789 Main Street, Philly, PA, 19501'}
+]);
+
+db.users.find({ _id: { $gte: 3, $lt: 2 } });
+
+const aggregation = [
+  { $match: { interests: { name: 'coding'}} }
+];
+
+db.users.aggregate(aggregation);
+
+//////
+db.orders.drop();
+
+db.orders.insertMany([
+  { '_id': 1, 'name': 'John Doe', 'email': 'john.doe@gmail.com', 'orderPlacedOn': '2021-07-11T08:57:40.674Z' , 'isDelivered': true, 'orderDeliveredOn': '2021-07-12T08:57:40.674Z', 'status': 'order delivered'},
+  { '_id': 2, 'name': 'Mary Jane', 'email': 'mary.jane@gmail.com', 'orderPlacedOn': '2021-07-13T08:57:40.674Z' , 'isDelivered': true, 'orderDeliveredOn': '2021-07-14T08:57:40.674Z', 'status': 'order delivered'},
+  { '_id': 3, 'name': 'Foo Bar', 'email': 'foo.bar@gmail.com', 'orderPlacedOn': '2021-07-15T08:57:40.674Z' , 'isDelivered': true, 'orderDeliveredOn': '2021-07-16T08:57:40.674Z', 'status': 'order delivered'},
+
+
+]);
+
+db.orders.find({ _id: { $gte: 2, $lt: 3 } });
+
+const aggregation = [
+  { $match: { status: { name: 'order delivered'}} }
+];
+
+db.orders.aggregate(aggregation);
+

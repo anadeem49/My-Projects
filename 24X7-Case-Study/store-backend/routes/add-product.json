@@ -1,0 +1,113 @@
+{
+  "status": "success",
+  "product": {
+    "_id": "DNMSBDSA3123",
+    "name": "iPhone XR",
+    "category": "technology",
+    "price": 499.99,
+    "discountPrice": 288.99,
+    "description": "A12 Bionic. And a 12 MP camera with an f/1.8 wide-angle lens. iPhone XR. Comes in (PRODUCT) RED, Yellow, White, Coral, Black and Blue colors (subject to availability).",
+    "image": "https://ss7.vzw.com/is/image/VerizonWireless/iPhoneXr_Red_PureAngles",
+    "createdOn": "2021-07-11TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product1": {
+    "_id": "DNMSBDSA3124",
+    "name": "Rubiks Connected Cube",
+    "category": "technology",
+    "price": 49.98,
+    "discountPrice": 42.95,
+    "description": "will teach you how to solve the notoriously challenging, incredibly interactive puzzle and have fun in the process.",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1616791827-rubiks-connected-cube-1616791797.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-12TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product2": {
+    "_id": "DNMSBDSA3125",
+    "name": "Grovemade Wood MagSafe Stand",
+    "category": "technology",
+    "price": 120.0,
+    "discountPrice": 85.75,
+    "description": "has impeccable craftsmanship, thanks to a stainless steel base and stand, leather and wood accents, and a natural cork base",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1612194445-grovemade-magsafe-stand-1612194198.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-13TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product3": {
+    "_id": "DNMSBDSA3126",
+    "name": "Blunt Metro Wind-Resistant Umbrella",
+    "category": "technology",
+    "price": 79.0,
+    "discountPrice": 54.99,
+    "description": "built to withstand wind gusts up to 72 mph",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1594760804-blunt-umbrella-1594760787.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-14TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product4": {
+    "_id": "DNMSBDSA3127",
+    "name": "Samsung Galaxy S21 5G Android Smartphone",
+    "category": "technology",
+    "price": 749.99,
+    "discountPrice": 499.99,
+    "description": "Samsung’s latest Galaxy S21 Android smartphone has a sleeker and more durable design with a 6.2-inch AMOLED display, upgraded hardware specs, and, best of all, a starting price tag that’s 20% lower than its predecessor’s.",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1612184164-samsung-galaxy-s21-1612184143.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-15TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product5": {
+    "_id": "DNMSBDSA3128",
+    "name": "Zyllion Shiatsu Back and Neck Massager",
+    "category": "technology",
+    "price": 49.95,
+    "discountPrice": 39.99,
+    "description": "can be used at home or even in the car (!) and is great for the shoulders, back, calves, and more.",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1594995451-shiatsu-massager-1594995433.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-16TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product6": {
+    "_id": "DNMSBDSA3129",
+    "name": "Fossil Latitude HR Hybrid Smartwatch",
+    "category": "technology",
+    "price": 195.0,
+    "discountPrice": 162.99,
+    "description": "can effortlessly deliver notifications from your phone and keep tabs on your activities",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1616975354-fossil-watch-1616975333.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-17TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product7": {
+    "_id": "DNMSBDSA3130",
+    "name": "SanDisk iXpand Flash Drive Luxe",
+    "category": "technology",
+    "price": 44.0,
+    "discountPrice": 32.99,
+    "description": "make transferring images, video, and other files between Apple products and other USB-C-equipped devices insanely effortless",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1616021027-sandisk-usb-drive-1616021011.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-18TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product8": {
+    "_id": "DNMSBDSA3131",
+    "name": "Anker PowerCore III Elite Laptop Battery Pack",
+    "category": "technology",
+    "price": 159.0,
+    "discountPrice": 119.99,
+    "description": "can charge your laptop via a fast USB-C connector",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623426457-anker-power-bank-powercore-iii-elite-25600-1623426442.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-19TO8:57:40.674Z",
+    "isTopProduct": true
+  },
+  "product9": {
+    "_id": "DNMSBDSA3132",
+    "name": "Amazon Echo Dot Smart Speaker",
+    "category": "technology",
+    "price": 49.99,
+    "discountPrice": 39.99,
+    "description": "The latest Amazon Echo Dot smart speaker has an orb-like design that’s cooler than its predecessor’s. The Alexa-powered gadget also has a stylish and understated fabric cover.",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1606058642-amazon-echo-dot-1606058621.jpg?crop=1xw:1xh;center,top&resize=768:*",
+    "createdOn": "2021-07-20TO8:57:40.674Z",
+    "isTopProduct": true
+  }
+}

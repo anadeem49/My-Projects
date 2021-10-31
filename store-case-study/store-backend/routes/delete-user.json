@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "_id": "DSDHKJASDHAADSJD",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@gmail.com",
+    "profileImage": "path/to/image/user.jpg",
+    "address": {
+      "streetAddress": "84 5th Ave",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "4DS34"
+    }
+  },
+  "status": "success",
+  "message": "profile deleted successfully"
+}

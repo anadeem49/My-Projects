@@ -1,0 +1,129 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 sol-sm-12">
+      <form
+        [formGroup]="productForm"
+        (ngSubmit)="saveProduct(productForm.value)"
+      >
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Name"
+            formControlName="name"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !productForm.controls['name'].valid &&
+              productForm.controls['name'].touched
+            "
+          >
+            <div [hidden]="!productForm.controls['name'].errors.required">
+              Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Department"
+            formControlName="department"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !productForm.controls['department'].valid &&
+              productForm.controls['department'].touched
+            "
+          >
+            <div [hidden]="!productForm.controls['department'].errors.required">
+              Department is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Price</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Price"
+            formControlName="price"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !productForm.controls['price'].valid &&
+              productForm.controls['price'].touched
+            "
+          >
+            <div [hidden]="!productForm.controls['price'].errors.required">
+              Price is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Description"
+            formControlName="desc"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !productForm.controls['desc'].valid &&
+              productForm.controls['desc'].touched
+            "
+          >
+            <div [hidden]="!productForm.controls['desc'].errors.required">
+              Description is required.
+            </div>
+            <div [hidden]="!productForm.controls['desc'].errors.minlength">
+              Description must be 10 characters long.
+            </div>
+            <div [hidden]="!productForm.controls['desc'].errors.maxlength">
+              Description must be have 1000 character length.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Image Url</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="imageUrl"
+            formControlName="imageUrl"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !productForm.controls['imageUrl'].valid &&
+              productForm.controls['imageUrl'].touched
+            "
+          >
+            <div [hidden]="!productForm.controls['imageUrl'].errors.required">
+              Image Url is required.
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!productForm.valid"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

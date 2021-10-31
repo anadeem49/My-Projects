@@ -1,0 +1,20 @@
+{
+  "user": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "password": "12345678",
+    "email": "john.doe@gmail.com"
+  },
+  "cart": [
+    {
+      "productId": "DNMSBDSA3123",
+      "quantity": 1
+    },
+    {
+      "productId": "GJHGSFFDDSDD",
+      "quantity": 2
+    }
+  ],
+  "status": "success",
+  "message": "order placed successfully"
+}

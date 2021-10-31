@@ -1,0 +1,141 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 sol-sm-12">
+      <form [formGroup]="userForm" (ngSubmit)="saveUser(userForm.value)">
+        <div class="form-group">
+          <label>First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter First Name"
+            formControlName="firstName"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['firstName'].valid &&
+              userForm.controls['firstName'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['first-name'].errors.required">
+              First name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Last Name"
+            formControlName="lastName"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['lastName'].valid &&
+              userForm.controls['lastName'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['lastName'].errors.required">
+              Last name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Email"
+            formControlName="email"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['email'].valid &&
+              userForm.controls['email'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['email'].errors.required">
+              Email is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Phone Number"
+            formControlName="phoneNumber"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['phoneNumber'].valid &&
+              userForm.controls['phoneNumber'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['phoneNumber'].errors.required">
+              Phone Number is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Interests</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your interests"
+            formControlName="interests"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['interests'].valid &&
+              userForm.controls['interests'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['interests'].errors.required">
+              Interests is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter your address"
+            formControlName="address"
+            required
+          />
+          <div
+            class="alert-danger"
+            *ngIf="
+              !userForm.controls['address'].valid &&
+              userForm.controls['address'].touched
+            "
+          >
+            <div [hidden]="!userForm.controls['address'].errors.required">
+              Address is required.
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!userForm.valid"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

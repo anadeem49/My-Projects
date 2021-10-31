@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "product": {
+    "isTopProduct": true
+  },
+  "message": "product edited successfully"
+}
